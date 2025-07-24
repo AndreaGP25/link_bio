@@ -14,6 +14,6 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 
-ENTRYPOINT ["reflex", "run", "--env", "prod", "--backend-only", "--loglevel", "debug" ]
+CMD ["reflex", "run", "--env", "prod", "--backend-only" ]
 
 #CMD reflex run --env prod --backend-only
